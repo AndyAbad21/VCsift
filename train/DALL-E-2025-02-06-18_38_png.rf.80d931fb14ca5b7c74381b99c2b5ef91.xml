@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>DALL-E-2025-02-06-18_38_png.rf.80d931fb14ca5b7c74381b99c2b5ef91.jpg</filename>
+	<path>DALL-E-2025-02-06-18_38_png.rf.80d931fb14ca5b7c74381b99c2b5ef91.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Speed limit 50</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>100</xmin>
+			<xmax>528</xmax>
+			<ymin>76</ymin>
+			<ymax>488</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>FisheyeCamera_1_00169_png.rf.e29dd2714d2dc254f36a7f65a48e668d.jpg</filename>
+	<path>FisheyeCamera_1_00169_png.rf.e29dd2714d2dc254f36a7f65a48e668d.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Speed limit 50</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>512</xmin>
+			<xmax>552</xmax>
+			<ymin>246</ymin>
+			<ymax>313</ymax>
+		</bndbox>
+	</object>
+</annotation>

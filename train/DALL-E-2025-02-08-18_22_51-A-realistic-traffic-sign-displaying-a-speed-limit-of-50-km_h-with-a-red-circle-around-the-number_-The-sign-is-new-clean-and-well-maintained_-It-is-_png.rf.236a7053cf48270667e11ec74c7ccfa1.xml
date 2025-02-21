@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>DALL-E-2025-02-08-18_22_51-A-realistic-traffic-sign-displaying-a-speed-limit-of-50-km_h-with-a-red-circle-around-the-number_-The-sign-is-new-clean-and-well-maintained_-It-is-_png.rf.236a7053cf48270667e11ec74c7ccfa1.jpg</filename>
+	<path>DALL-E-2025-02-08-18_22_51-A-realistic-traffic-sign-displaying-a-speed-limit-of-50-km_h-with-a-red-circle-around-the-number_-The-sign-is-new-clean-and-well-maintained_-It-is-_png.rf.236a7053cf48270667e11ec74c7ccfa1.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Speed limit 50</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>202</xmin>
+			<xmax>456</xmax>
+			<ymin>13</ymin>
+			<ymax>277</ymax>
+		</bndbox>
+	</object>
+</annotation>

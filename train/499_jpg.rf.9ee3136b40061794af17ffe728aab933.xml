@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>499_jpg.rf.9ee3136b40061794af17ffe728aab933.jpg</filename>
+	<path>499_jpg.rf.9ee3136b40061794af17ffe728aab933.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Speed limit 50</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>136</xmin>
+			<xmax>479</xmax>
+			<ymin>57</ymin>
+			<ymax>503</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>road648_png.rf.98b444251a04a5727c4f491101b4cfc6.jpg</filename>
+	<path>road648_png.rf.98b444251a04a5727c4f491101b4cfc6.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Speed limit 50</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>321</xmin>
+			<xmax>373</xmax>
+			<ymin>292</ymin>
+			<ymax>336</ymax>
+		</bndbox>
+	</object>
+</annotation>

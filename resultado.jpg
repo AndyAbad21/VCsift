@@ -1,0 +1,8 @@
+{
+  "confidence_level": 3.4,
+  "fps": 6.15,
+  "keypoints_detected": 500,
+  "mem_usage_mb": 11.18,
+  "message": "Procesamiento exitoso",
+  "result_image": "/static/results/match_result.jpg"
+}

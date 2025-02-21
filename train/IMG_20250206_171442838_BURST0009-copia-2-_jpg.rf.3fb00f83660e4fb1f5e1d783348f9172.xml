@@ -1,0 +1,14 @@
+<annotation>
+	<folder></folder>
+	<filename>IMG_20250206_171442838_BURST0009-copia-2-_jpg.rf.3fb00f83660e4fb1f5e1d783348f9172.jpg</filename>
+	<path>IMG_20250206_171442838_BURST0009-copia-2-_jpg.rf.3fb00f83660e4fb1f5e1d783348f9172.jpg</path>
+	<source>
+		<database>roboflow.com</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+</annotation>
