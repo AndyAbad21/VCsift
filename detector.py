@@ -113,6 +113,7 @@ def detectar_contorno_rojo(img):
 
         # Dibujar un rectángulo alrededor del contorno rojo
         cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 3)
+        cv2.putText(img, "Letrero", (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
         print(f"[INFO] Contorno rojo detectado en ({x}, {y}), tamaño ({w}, {h})")
 
     return img
@@ -158,19 +159,29 @@ def detectar_objetos(image_path):
         img_reference = reference_images[best_match]
         kp_reference = ref_keypoints[best_match]
 
-        # Dibujar los matches
-        match_img = cv2.drawMatches(img_reference, kp_reference, img, kp, best_matches, None,
-                                    flags=cv2.DrawMatchesFlags_NOT_DRAW_SINGLE_POINTS)
+        # Dibujar los keypoints en la imagen de referencia
+        ref_with_kp = cv2.drawKeypoints(img_reference, kp_reference, None, (255, 0, 0), cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
 
-        # Aplicar detección de contorno rojo antes de guardar
+        # Aplicar detección de contorno rojo en la imagen original
         img_original = cv2.imread(image_path)
         img_con_contorno = detectar_contorno_rojo(img_original)
 
+        # Redimensionar ambas imágenes para que tengan la misma altura
+        height = max(ref_with_kp.shape[0], img_con_contorno.shape[0])
+        width_ref = ref_with_kp.shape[1]
+        width_test = img_con_contorno.shape[1]
+
+        ref_with_kp = cv2.resize(ref_with_kp, (width_ref, height))
+        img_con_contorno = cv2.resize(img_con_contorno, (width_test, height))
+
+        # Concatenar ambas imágenes horizontalmente (lado a lado)
+        resultado_final = np.hstack((ref_with_kp, img_con_contorno))
+
         # Guardar la imagen final con detección
         result_path = "static/results/match_result.jpg"
-        cv2.imwrite(result_path, img_con_contorno)
+        cv2.imwrite(result_path, resultado_final)
         print(f"[INFO] Imagen guardada con detección en: {result_path}")
 
-        return match_img
+        return resultado_final
 
     return img
